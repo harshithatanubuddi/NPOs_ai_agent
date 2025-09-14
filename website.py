@@ -1,67 +1,146 @@
 import streamlit as st
 
-st.set_page_config(page_title="AI-Powered Non-Profit Recommendation and Sentiment Analysis Platform")
+# ----------------------------
+# Page Configuration
+# ----------------------------
+st.set_page_config(
+    page_title="AI-Powered Non-Profit Platform",
+    layout="wide",
+    page_icon="🌍"
+)
 
-# Title and Subtitle
-st.title("AI-Powered Non-Profit Recommendation and Sentiment Analysis Platform")
+# ----------------------------
+# Custom CSS for Styling
+# ----------------------------
 st.markdown("""
-### Empowering Social Good with AI
+    <style>
+        .main-title {
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+            color: #2C3E50;
+        }
+        .subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: #7F8C8D;
+            margin-bottom: 30px;
+        }
+        .section-header {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+        .info-card {
+            background-color: #F8F9F9;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+""", unsafe_allow_html=True)
 
-**Non-profit organizations (NPOs)** play a critical role in addressing social, environmental, and humanitarian challenges. However, gaps remain between donors, volunteers, and beneficiaries due to:
-- Lack of personalized recommendations
-- Limited visibility of organizational needs
-- Ineffective feedback mechanisms
+# ----------------------------
+# Title & Subtitle
+# ----------------------------
+st.markdown('<div class="main-title">🌟 AI-Powered Non-Profit Recommendation & Sentiment Analysis</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Empowering Social Good with Artificial Intelligence</div>', unsafe_allow_html=True)
 
-This platform leverages AI to bridge those gaps!
-""")
+st.write("---")
 
-# Introduction Section
-st.header("What We Do")
-st.markdown("""
-We help connect donors and volunteers with relevant NPOs, highlight opportunities, and analyze beneficiary feedback for greater impact. Our platform uses intelligent algorithms and interactive dashboards for a seamless experience.
-""")
+# ----------------------------
+# What We Do Section
+# ----------------------------
+st.markdown('<div class="section-header">💡 What We Do</div>', unsafe_allow_html=True)
 
-# Problem Statement
-st.header("Why This Matters")
-st.markdown("""
-The main challenge is the mismatch between available resources (donors/volunteers) and the needs of NPOs and affected communities. Our AI-driven solution addresses this by:
-- Building a recommendation system for donors to identify NPOs that align with their interests.
-- Suggesting volunteering opportunities nearby, based on skills, availability, and organizational requirements.
-- Using sentiment analysis on beneficiary feedback to assess the impact of NPO initiatives and highlight areas for improvement.
-- Providing an interactive Streamlit-based website for easy access by donors, volunteers, and organizations.
-""")
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown(
+        """
+        <div class="info-card">
+        We connect **donors** and **volunteers** with relevant NPOs, highlight opportunities,  
+        and analyze **beneficiary feedback** for greater impact.  
+        
+        👉 Powered by **AI, analytics, and interactivity**.
+        </div>
+        """, unsafe_allow_html=True
+    )
+with col2:
+    st.image("https://cdn-icons-png.flaticon.com/512/1077/1077012.png", width=250)
 
-# Methodology and Features
-st.header("How It Works")
-st.markdown("""
-- **Recommendation Engine:** Uses machine learning to match donors to NPOs by interest and cause.
-- **Volunteer Matching:** Leverages geolocation and user skills to suggest nearby opportunities.
-- **Sentiment Analysis:** Applies NLP to beneficiary feedback for actionable insights.
-- **Interactive Dashboards:** Built on Streamlit for visualizing data and engagement metrics.
-- **Backend Technology:** Powered by Python libraries (scikit-learn, TensorFlow/PyTorch, spaCy).
+# ----------------------------
+# Why This Matters
+# ----------------------------
+st.markdown('<div class="section-header">🚨 Why This Matters</div>', unsafe_allow_html=True)
 
-Features include:
-- Personalized NPO and volunteering recommendations
-- Beneficiary feedback analysis and impact scorecards
-- Location-based opportunity finder
-- Data-driven dashboards for all stakeholders
-""")
+cols = st.columns(4)
+reasons = [
+    ("🎯", "Personalized donor recommendations"),
+    ("🤝", "Skill-based volunteering matches"),
+    ("💬", "Impact measurement via feedback"),
+    ("🖥️", "Interactive platform for all")
+]
+for col, (icon, text) in zip(cols, reasons):
+    with col:
+        st.markdown(f"""
+        <div class="info-card" style="text-align:center;">
+            <h2>{icon}</h2>
+            <p>{text}</p>
+        </div>
+        """, unsafe_allow_html=True)
 
+# ----------------------------
+# How It Works
+# ----------------------------
+st.markdown('<div class="section-header">⚙️ How It Works</div>', unsafe_allow_html=True)
+
+with st.container():
+    step1, step2, step3 = st.columns(3)
+    step1.markdown("✅ **Recommendation Engine** <br> ML to match donors & NPOs", unsafe_allow_html=True)
+    step2.markdown("✅ **Volunteer Matching** <br> Geolocation + skills", unsafe_allow_html=True)
+    step3.markdown("✅ **Sentiment Analysis** <br> NLP on feedback", unsafe_allow_html=True)
+
+    step4, step5 = st.columns(2)
+    step4.markdown("✅ **Interactive Dashboards** <br> Data visualizations via Streamlit", unsafe_allow_html=True)
+    step5.markdown("✅ **Backend Tech** <br> Python, Scikit-learn, TensorFlow, spaCy", unsafe_allow_html=True)
+
+# ----------------------------
 # Expected Outcomes
-st.header("Expected Outcomes")
-st.markdown("""
-- **Improved Donor Engagement:** Through targeted recommendations.
-- **Efficient Volunteer Matching:** Connecting skills and locations with needs.
-- **Actionable Insights for NPOs:** Via sentiment analysis of beneficiary feedback.
-- **Ethical AI Practices:** Ensuring data privacy, fairness, and transparency.
+# ----------------------------
+st.markdown('<div class="section-header">📌 Expected Outcomes</div>', unsafe_allow_html=True)
 
-Our platform strengthens collaboration between donors, volunteers, and non-profits for greater societal impact.
-""")
+outcomes = [
+    ("🌱", "Improved donor engagement"),
+    ("🤲", "Efficient volunteer matching"),
+    ("📊", "Actionable insights for NPOs"),
+    ("🔒", "Ethical AI practices")
+]
 
+cols = st.columns(4)
+for col, (icon, text) in zip(cols, outcomes):
+    with col:
+        st.markdown(f"""
+        <div class="info-card" style="text-align:center;">
+            <h2>{icon}</h2>
+            <p>{text}</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+# ----------------------------
 # Ethical Commitment
-st.header("Ethical Commitment")
-st.markdown("""
-We emphasize ethical AI practices to ensure data privacy, fairness, and transparency in all our solutions.
+# ----------------------------
+st.markdown('<div class="section-header">🤝 Ethical Commitment</div>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <div class="info-card">
+    We are committed to **responsible AI practices**, ensuring:  
+    - 🔐 **Data privacy**  
+    - ⚖️ **Fairness & inclusivity**  
+    - 🔍 **Transparency in decision-making**  
 
-**Join us to make a difference!**
-""")
+    ✨ <b>Join us in making a difference!</b>
+    </div>
+    """, unsafe_allow_html=True
+)
