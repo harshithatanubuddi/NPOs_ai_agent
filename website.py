@@ -59,10 +59,10 @@ st.markdown('<div class="section-header">💡 What We Do</div>', unsafe_allow_ht
 st.markdown(
     """
     <div class="info-card">
-    We connect **donors** and **volunteers** with relevant NPOs, highlight opportunities,  
-    and analyze **beneficiary feedback** for greater impact.  
+    We connect <b>donors</b> and <b>volunteers</b> with relevant NPOs, highlight opportunities,  
+    and analyze <b>beneficiary feedback</b> for greater impact.  
 
-    👉 Our platform ensures **seamless engagement** through AI-powered recommendations and dashboards.
+    👉 Our platform ensures <b>seamless engagement</b> through AI-powered recommendations and dashboards.
     </div>
     """, unsafe_allow_html=True
 )
@@ -77,7 +77,7 @@ with cols[0]:
     st.markdown(
         """
         <div class="info-card">
-        The main challenge is the **gap** between resources and community needs.  
+        The main challenge is the gap between resources and community needs.  
         Our platform addresses this by:  
         - 🎯 Personalized donor recommendations  
         - 🤝 Volunteer matching (skills + location)  
@@ -99,11 +99,11 @@ with cols[0]:
     st.markdown(
         """
         <div class="info-card">
-        - 🤖 **Recommendation Engine:** Matches donors & NPOs  
-        - 📍 **Volunteer Matching:** Location & skills-based suggestions  
-        - 💬 **Sentiment Analysis:** NLP on beneficiary feedback  
-        - 📈 **Interactive Dashboards:** Streamlit visualizations  
-        - 🛠️ **Tech Stack:** Python, scikit-learn, TensorFlow, spaCy  
+        - 🤖 <b>Recommendation Engine:</b> Matches donors & NPOs  
+        - 📍 <b>Volunteer Matching:</b> Location & skills-based suggestions  
+        - 💬 <b>Sentiment Analysis:</b> NLP on beneficiary feedback  
+        - 📈 <b>Interactive Dashboards:</b> Streamlit visualizations  
+        - 🛠️ <b>Tech Stack:</b> Python, scikit-learn, TensorFlow, spaCy  
         </div>
         """, unsafe_allow_html=True
     )
@@ -139,7 +139,7 @@ st.markdown('<div class="section-header">🤝 Ethical Commitment</div>', unsafe_
 st.markdown(
     """
     <div class="info-card">
-    We commit to **responsible AI**, ensuring:  
+    We commit to <b>responsible AI</b>, ensuring:  
     - 🔐 Data privacy  
     - ⚖️ Fairness & inclusivity  
     - 🔍 Transparency in decisions  
