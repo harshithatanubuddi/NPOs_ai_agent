@@ -28,4 +28,4 @@ st.markdown('<div class="card" style="margin-top:12px"><h3>How It Works</h3><ul>
 
 st.markdown('<div class="card" style="margin-top:12px"><h3>Expected Outcomes</h3><ul><li>Improved donor engagement</li><li>Faster volunteer placement</li><li>Actionable insights for NPOs</li></ul></div>', unsafe_allow_html=True)
 
-st.markdown('<div class="card" style="margin-top:12px"><h3>Contact</h3><p>Email: your-email@example.com</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="card" style="margin-top:12px"><h3>Contact</h3><p>Email: non_profit_platform@gmail.com</p></div>', unsafe_allow_html=True)
